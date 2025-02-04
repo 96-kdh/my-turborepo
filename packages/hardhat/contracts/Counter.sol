@@ -1,5 +1,5 @@
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+// SPDX-License-Identifier: UNLICENSED
+pragma solidity ^0.8.28;
 
 contract Counter {
     uint256 private count = 0;
@@ -12,6 +12,11 @@ contract Counter {
 
     function upCount() external returns (uint256 nextCnt) {
         count += 1;
+        return count;
+    }
+
+    function upCount(uint256 _cnt) external returns (uint256 nextCnt) {
+        count += _cnt;
         return count;
     }
 

@@ -1,0 +1,13 @@
+coverage
+public
+dist
+.turbo
+.turbo
+.yarn
+@types
+*.json
+*.md
+*.yaml
+build
+node_modules
+types
