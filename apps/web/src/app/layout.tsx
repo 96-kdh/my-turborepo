@@ -1,7 +1,9 @@
 import type { Metadata } from 'next';
+import React from 'react';
 
 import ReduxProvider from '@/ducks/provider';
 import { Web3Modal } from '@/lib/Web3Modal';
+
 import './globals.css';
 
 export const metadata: Metadata = {
