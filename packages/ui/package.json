@@ -4,7 +4,8 @@
   "private": true,
   "exports": {
     "./components": "./src/components/index.ts",
-    "./constant": "./src/constant/index.ts"
+    "./constant": "./src/constant/index.ts",
+    "./theme": "./src/theme/index.ts"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
@@ -19,7 +20,12 @@
     "typescript": "5.7.3"
   },
   "dependencies": {
+    "@tamagui/config": "^1.124.1",
+    "@tamagui/font-inter": "^1.124.1",
     "@tamagui/lucide-icons": "^1.123.17",
+    "@tamagui/next-plugin": "^1.124.1",
+    "@tamagui/shorthands": "^1.124.1",
+    "@tamagui/themes": "^1.124.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "styled-components": "^6.1.15",

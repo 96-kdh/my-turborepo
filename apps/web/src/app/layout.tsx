@@ -2,9 +2,10 @@ import type { Metadata } from 'next';
 import React from 'react';
 
 import ReduxProvider from '@/ducks/provider';
-import { Web3Modal } from '@/lib/Web3Modal';
+import { WalletConnectProvider } from '@/lib/walletConnectProvider';
 
 import './globals.css';
+import { TamaguiProvider } from '@/lib/tamaguiProvider';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -20,7 +21,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <ReduxProvider>
-          <Web3Modal>{children}</Web3Modal>
+          <WalletConnectProvider>
+            <TamaguiProvider>{children}</TamaguiProvider>
+          </WalletConnectProvider>
         </ReduxProvider>
       </body>
     </html>

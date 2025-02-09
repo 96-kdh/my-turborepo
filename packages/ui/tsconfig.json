@@ -5,7 +5,8 @@
     "baseUrl": "./src",
     "paths": {
       "@components/*": ["components/*"],
-      "@assets/*": ["assets/*"]
+      "@constant/*": ["constant/*"],
+      "@theme/*": ["theme/*"]
     }
   },
   "include": ["src"],
